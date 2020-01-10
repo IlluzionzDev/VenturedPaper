@@ -1,6 +1,6 @@
-From a6e8dce031b1f84f064492011103e1f7e732f963 Mon Sep 17 00:00:00 2001
+From d4f23b529cc18e5d6a9f47429b15acef96f653f9 Mon Sep 17 00:00:00 2001
 From: "apollosoftware.io" <contact@apollosoftware.io>
-Date: Tue, 7 Jan 2020 17:03:32 -0800
+Date: Fri, 10 Jan 2020 00:35:28 -0800
 Subject: [PATCH] Pixelverse Patch
 
 
@@ -81,6 +81,21 @@ index c950139c0..d0278b594 100644
      public Optional<Vec3D> b(Vec3D vec3d, Vec3D vec3d1) {
          double[] adouble = new double[]{1.0D};
          double d0 = vec3d1.x - vec3d.x;
+diff --git a/src/main/java/net/minecraft/server/ChunkRegionLoader.java b/src/main/java/net/minecraft/server/ChunkRegionLoader.java
+index 26f1a4b09..6d6e29e19 100644
+--- a/src/main/java/net/minecraft/server/ChunkRegionLoader.java
++++ b/src/main/java/net/minecraft/server/ChunkRegionLoader.java
+@@ -434,6 +434,10 @@ public class ChunkRegionLoader {
+                     // Paper start
+                     if ((int) Math.floor(entity.locX()) >> 4 != chunk.getPos().x || (int) Math.floor(entity.locZ()) >> 4 != chunk.getPos().z) {
+                         LogManager.getLogger().warn(entity + " is not in this chunk, skipping save. This a bug fix to a vanilla bug. Do not report this to PaperMC please.");
++                        System.out.println("PV Test");
++                        for (StackTraceElement ste : Thread.currentThread().getStackTrace()) {
++                            System.out.println(ste);
++                        }
+                         if (asyncsavedata == null) toUpdate.add(entity); // todo fix this broken code, entityJoinedWorld wont work in this case!
+                         continue;
+                     }
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
 index 8c88cf637..4d9a5b568 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
