@@ -37,10 +37,6 @@ index 4af5a230ba..6371f2f5b1 100644
 +                    // Paper start
 +                    if ((int) Math.floor(entity.locX()) >> 4 != chunk.getPos().x || (int) Math.floor(entity.locZ()) >> 4 != chunk.getPos().z) {
 +                        LogManager.getLogger().warn(entity + " is not in this chunk, skipping save. This a bug fix to a vanilla bug. Do not report this to PaperMC please.");
-+                        System.out.println("PV Test");
-+                         for (StackTraceElement ste : Thread.currentThread().getStackTrace()) {
-+                              System.out.println(ste);
-+                         }
 +                        toUpdate.add(entity);
 +                        continue;
 +                    }
