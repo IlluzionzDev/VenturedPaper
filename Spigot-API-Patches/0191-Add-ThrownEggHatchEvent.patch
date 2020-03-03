@@ -1,4 +1,4 @@
-From 66c2aa84c68e3ec3fa0a0f952df4ca94ab3b8d34 Mon Sep 17 00:00:00 2001
+From c89e5d21c8c3982d85b1f534d40357c951c5b1a1 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <blake.galbreath@gmail.com>
 Date: Sun, 9 Feb 2020 00:19:08 -0600
 Subject: [PATCH] Add ThrownEggHatchEvent
@@ -128,5 +128,5 @@ index 00000000..085d77dd
 +    }
 +}
 -- 
-2.25.0
+2.24.1.windows.2
 

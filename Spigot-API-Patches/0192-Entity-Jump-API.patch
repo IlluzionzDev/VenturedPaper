@@ -1,4 +1,4 @@
-From 2fc6fd345f199b0d123147ca13d441b86156c121 Mon Sep 17 00:00:00 2001
+From 7b0657e65e5f4240e8a95a5aac36c836b5497185 Mon Sep 17 00:00:00 2001
 From: BillyGalbreath <Blake.Galbreath@GMail.com>
 Date: Sat, 8 Feb 2020 23:26:18 -0600
 Subject: [PATCH] Entity Jump API
@@ -6,7 +6,7 @@ Subject: [PATCH] Entity Jump API
 
 diff --git a/src/main/java/com/destroystokyo/paper/event/entity/EntityJumpEvent.java b/src/main/java/com/destroystokyo/paper/event/entity/EntityJumpEvent.java
 new file mode 100644
-index 000000000..f0067c2e9
+index 00000000..f0067c2e
 --- /dev/null
 +++ b/src/main/java/com/destroystokyo/paper/event/entity/EntityJumpEvent.java
 @@ -0,0 +1,46 @@
@@ -57,7 +57,7 @@ index 000000000..f0067c2e9
 +    }
 +}
 diff --git a/src/main/java/org/bukkit/entity/LivingEntity.java b/src/main/java/org/bukkit/entity/LivingEntity.java
-index deab50525..7f73e4b92 100644
+index deab5052..7f73e4b9 100644
 --- a/src/main/java/org/bukkit/entity/LivingEntity.java
 +++ b/src/main/java/org/bukkit/entity/LivingEntity.java
 @@ -711,5 +711,25 @@ public interface LivingEntity extends Attributable, Damageable, ProjectileSource
@@ -87,5 +87,5 @@ index deab50525..7f73e4b92 100644
      // Paper end
  }
 -- 
-2.25.0
+2.24.1.windows.2
 

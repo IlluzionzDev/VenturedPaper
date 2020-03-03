@@ -1,11 +1,11 @@
-From eeb73f0f817591d7385cc0db9bcc91e7b800f1f9 Mon Sep 17 00:00:00 2001
+From 0a3c2aca1df79cac341ce27c303665bfd2e07211 Mon Sep 17 00:00:00 2001
 From: Trigary <trigary0@gmail.com>
 Date: Sun, 1 Mar 2020 22:43:34 +0100
 Subject: [PATCH] add hand to BlockMultiPlaceEvent
 
 
 diff --git a/src/main/java/org/bukkit/event/block/BlockMultiPlaceEvent.java b/src/main/java/org/bukkit/event/block/BlockMultiPlaceEvent.java
-index fe2ec79dd..8460aa4f5 100644
+index fe2ec79d..8460aa4f 100644
 --- a/src/main/java/org/bukkit/event/block/BlockMultiPlaceEvent.java
 +++ b/src/main/java/org/bukkit/event/block/BlockMultiPlaceEvent.java
 @@ -18,9 +18,17 @@ import org.jetbrains.annotations.NotNull;
@@ -28,5 +28,5 @@ index fe2ec79dd..8460aa4f5 100644
  
      /**
 -- 
-2.25.0
+2.24.1.windows.2
 
